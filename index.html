@@ -11,10 +11,80 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="itens/css/estilos.css">
     <link rel="stylesheet" href="itens/css/bootstrap.min.css">
+
+    <style>
+        /* Extra small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+
+            nav div {
+                margin-top: 20px;
+
+            }
+
+            nav div form {
+                margin-left: 6.5%;
+                margin-right: 0%;
+            }
+
+
+            .primeiro  {
+                border-radius: 5px;
+                border-right: none;
+                border: 1px solid rgba(128, 128, 128, 0.2);
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
+                margin-left: 7.5%;
+            }
+
+            .segundo {
+                border-radius: 5px;
+                border-left: none;
+                border: 1px solid rgba(128, 128, 128, 0.2);
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
+                margin-left: 7.5%;
+            }
+        }
+
+        /* Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            body {
+                background: rgb(255, 0, 200);
+            }
+
+            nav h3 {
+                visibility: collapse;
+                position: absolute;
+            }
+        }
+
+        /* Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            body {
+                background: rgb(148, 149, 240);
+            }
+        }
+
+        /* Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            body {
+                background: rgb(0, 255, 34);
+            }
+        }
+
+        /* Extra large devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) {
+            body {
+                background: rgb(251, 255, 0);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm navbar-light">
 
             <!-- Logo -->
             <img src="imagens/atletico.png" alt="logo do atletico paranaense" class="navbar-brand">
@@ -29,7 +99,7 @@
             <!-- navegacao -->      
             <div class="collapse navbar-collapse" id="navegacao2">
                 <!-- Formulário -->
-                <form class="form-inline" style="width: 60%;">
+                <form class="form-inline" style="width: 85%;">
                     <input style="width: 100%; background: rgb(223, 223, 223);" type="text" class="form-control" placeholder="Pesquisar...">
                 </form>
                 <ul class="navbar-nav ml-auto">
@@ -50,15 +120,50 @@
         <aside>
 
         </aside>
-        <article>
-
+        <article id="banner">
+            <img class="w-100" src="imagens/banner.jpg" alt="babber atletico">
+        </article>
+        <article id="desc-tempo">
+            <div id="descricao" class="w-25 float-left">
+                <p>
+                    <strong>Compre as sua figuras e concorra a prêmios.</strong><br>
+                    Na compra de cada figura você ganha um número de cotas
+                    para participar do prêmio principal do sorteio e pode ganhar 
+                    prêmios instantâneos nas cotas premiadas.
+                </p>
+            </div>
+            <div id="data" class="float-right navbar navbar-expand navbar-light">
+                <hr>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <p><strong>Dia do sorteio:</strong><br>25 de Novembro 2023</p>
+                    </li>
+                    <li class="nav-item t">
+                        <h3>45</h3>
+                        <h4>dias</h4>
+                    </li>
+                    <li class="nav-item t">
+                        <h3>45</h3>
+                        <h4>dias</h4>
+                    </li>
+                    <li class="nav-item t">
+                        <h3>45</h3>
+                        <h4>dias</h4>
+                    </li>
+                    <li class="nav-item t">
+                        <h3>45</h3>
+                        <h4>dias</h4>
+                    </li>
+                </ul>
+            </div>
         </article>
     </section>
+    <hr style="clear: both;">
 
-    <footer>
-
+    <footer style="clear: both;">
+        rodape
     </footer>
-
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
