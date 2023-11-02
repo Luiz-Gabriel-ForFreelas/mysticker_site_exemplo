@@ -56,7 +56,8 @@ nav ul li a {
 }
 
 #data ul .t{
-    border: 1px solid red;
+    background: rgb(185, 185, 185);  
+    color: white;  
     border-radius: 5px;
     padding: 5px 10px;
     margin: 5px;
@@ -75,4 +76,20 @@ nav ul li a {
 
 #data ul .t h4 {
     font-size: 0.8em;
+}
+
+/* GRID */
+
+#grid {
+    width: 100%;
+    border: 1px solid red;
+}
+
+.lista-selecionar li {
+    display: inline;
+    border: 1px solid red;
+}
+
+.card {
+    width: 30%;
 }

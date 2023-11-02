@@ -58,6 +58,18 @@
                 visibility: collapse;
                 position: absolute;
             }
+
+            #data {
+                width: 100%;
+            }
+
+            #descricao {
+                width: 100%;
+            }
+
+            #desc-tempo {
+                text-align: center;
+            }
         }
 
         /* Medium devices (tablets, 768px and up)*/
@@ -65,12 +77,33 @@
             body {
                 background: rgb(148, 149, 240);
             }
+            #data {
+                width: 100%;
+            }
+
+            #descricao {
+                width: 100%;
+            }
+
+            #desc-tempo {
+                text-align: center;
+            }
         }
 
-        /* Large devices (desktops, 992px and up)*/
+        /* Large devices (desktops, 992px and up)*/ 
         @media (min-width: 992px) and (max-width: 1199.98px) {
             body {
                 background: rgb(0, 255, 34);
+            }
+
+            #data {
+                float: right;
+                width: 50%;
+            }
+
+            #descricao {
+                float: left;
+                width: 50%;
             }
         }
 
@@ -78,6 +111,16 @@
         @media (min-width: 1200px) {
             body {
                 background: rgb(251, 255, 0);
+            }
+
+            #data {
+                float: right;
+                width: 50%;
+            }
+
+            #descricao {
+                float: left;
+                width: 50%;
             }
         }
     </style>
@@ -117,14 +160,11 @@
     </header>
 
     <section>
-        <aside>
-
-        </aside>
         <article id="banner">
             <img class="w-100" src="imagens/banner.jpg" alt="babber atletico">
         </article>
         <article id="desc-tempo">
-            <div id="descricao" class="w-25 float-left">
+            <div id="descricao" class="">
                 <p>
                     <strong>Compre as sua figuras e concorra a prêmios.</strong><br>
                     Na compra de cada figura você ganha um número de cotas
@@ -159,6 +199,38 @@
         </article>
     </section>
     <hr style="clear: both;">
+
+    <section>
+        <aside>
+
+        </aside>
+        <article id="grid">
+            <div class="container" style="border: 1px solid red;">
+                <div class="card">
+                    <img class="card-img-top" src="https://source.unsplash.com/random/200x200">
+                    <div class="card-body">
+                        <div>
+                            <ul class="lista-selecionar">
+                                <li>
+                                    <span>+5</span>
+                                    <span>SELECIONAR</span>
+                                </li>
+                                <li>
+                                    <span>+15</span>
+                                    <span>SELECIONAR</span>
+                                </li>
+                                <li>
+                                    <span>+20</span>
+                                    <span>SELECIONAR</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 class="card-title">R$3,50 Comprar</h4>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
 
     <footer style="clear: both;">
         rodape
