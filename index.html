@@ -1,245 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
-
-    <title>Bootstrap - botões</title>
-
-    <!-- Required meta tags -->
+    <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="itens/css/estilos.css">
-    <link rel="stylesheet" href="itens/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <style>
-        /* Extra small devices (portrait phones, less than 576px)*/
-        @media (max-width: 575.98px) {
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5cff0a8232.js" crossorigin="anonymous"></script>
 
-            nav div {
-                margin-top: 20px;
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="estilo.css">
 
-            }
-
-            nav div form {
-                margin-left: 6.5%;
-                margin-right: 0%;
-            }
-
-
-            .primeiro  {
-                border-radius: 5px;
-                border-right: none;
-                border: 1px solid rgba(128, 128, 128, 0.2);
-                margin-top: 10px;
-                width: 100%;
-                text-align: center;
-                margin-left: 7.5%;
-            }
-
-            .segundo {
-                border-radius: 5px;
-                border-left: none;
-                border: 1px solid rgba(128, 128, 128, 0.2);
-                margin-top: 10px;
-                width: 100%;
-                text-align: center;
-                margin-left: 7.5%;
-            }
-        }
-
-        /* Small devices (landscape phones, 576px and up)*/
-        @media (min-width: 576px) and (max-width: 767.98px) {
-            body {
-                background: rgb(255, 0, 200);
-            }
-
-            nav h3 {
-                visibility: collapse;
-                position: absolute;
-            }
-
-            #data {
-                width: 100%;
-            }
-
-            #descricao {
-                width: 100%;
-            }
-
-            #desc-tempo {
-                text-align: center;
-            }
-        }
-
-        /* Medium devices (tablets, 768px and up)*/
-        @media (min-width: 768px) and (max-width: 991.98px) {
-            body {
-                background: rgb(148, 149, 240);
-            }
-            #data {
-                width: 100%;
-            }
-
-            #descricao {
-                width: 100%;
-            }
-
-            #desc-tempo {
-                text-align: center;
-            }
-        }
-
-        /* Large devices (desktops, 992px and up)*/ 
-        @media (min-width: 992px) and (max-width: 1199.98px) {
-            body {
-                background: rgb(0, 255, 34);
-            }
-
-            #data {
-                float: right;
-                width: 50%;
-            }
-
-            #descricao {
-                float: left;
-                width: 50%;
-            }
-        }
-
-        /* Extra large devices (large desktops, 1200px and up)*/
-        @media (min-width: 1200px) {
-            body {
-                background: rgb(251, 255, 0);
-            }
-
-            #data {
-                float: right;
-                width: 50%;
-            }
-
-            #descricao {
-                float: left;
-                width: 50%;
-            }
-        }
-    </style>
+    <title>My Styckers</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light">
+    <header class="">
 
-            <!-- Logo -->
-            <img src="imagens/atletico.png" alt="logo do atletico paranaense" class="navbar-brand">
-            <h3 class="navbar-brand">Atletico Paranaense</h3>
-    
-            <!-- Menu Hamburguer -->
-            <button class="navbar-toggler" data-toggle="collapse" 
-            data-target="#navegacao2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- navegacao -->      
-            <div class="collapse navbar-collapse" id="navegacao2">
-                <!-- Formulário -->
-                <form class="form-inline" style="width: 85%;">
-                    <input style="width: 100%; background: rgb(223, 223, 223);" type="text" class="form-control" placeholder="Pesquisar...">
-                </form>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a style="padding-right:20px; padding-left: 20px;" href="" class="nav-link primeiro">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="padding-right:20px; padding-left: 20px;" href="" class="nav-link segundo">Sobre</a>
-                    </li>
-                </ul>
-    
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <a href="" class="navbar-brand">
+                                    <img src="imagens/atletico.png" alt="" width="70">
+                                    <span>Athetico Paranaense</span>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 aling-self-center">
+                                <form action="">
+                                    <div class="form-group mt-1">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-3">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a class="btn btn-light nav-link" href="">Perfil</a></li>
+                                    <li class="nav-item"><a class="btn btn-light nav-link" href="">Carteira</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-    
         </nav>
     </header>
 
-    <section>
-        <article id="banner">
-            <img class="w-100" src="imagens/banner.jpg" alt="babber atletico">
-        </article>
-        <article id="desc-tempo">
-            <div id="descricao" class="">
-                <p>
-                    <strong>Compre as sua figuras e concorra a prêmios.</strong><br>
-                    Na compra de cada figura você ganha um número de cotas
-                    para participar do prêmio principal do sorteio e pode ganhar 
-                    prêmios instantâneos nas cotas premiadas.
-                </p>
-            </div>
-            <div id="data" class="float-right navbar navbar-expand navbar-light">
-                <hr>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                      <p><strong>Dia do sorteio:</strong><br>25 de Novembro 2023</p>
-                    </li>
-                    <li class="nav-item t">
-                        <h3>45</h3>
-                        <h4>dias</h4>
-                    </li>
-                    <li class="nav-item t">
-                        <h3>45</h3>
-                        <h4>dias</h4>
-                    </li>
-                    <li class="nav-item t">
-                        <h3>45</h3>
-                        <h4>dias</h4>
-                    </li>
-                    <li class="nav-item t">
-                        <h3>45</h3>
-                        <h4>dias</h4>
-                    </li>
-                </ul>
-            </div>
-        </article>
-    </section>
-    <hr style="clear: both;">
-
-    <section>
-        <aside>
-
-        </aside>
-        <article id="grid">
-            <div class="container" style="border: 1px solid red;">
-                <div class="card">
-                    <img class="card-img-top" src="https://source.unsplash.com/random/200x200">
-                    <div class="card-body">
-                        <div>
-                            <ul class="lista-selecionar">
-                                <li>
-                                    <span>+5</span>
-                                    <span>SELECIONAR</span>
-                                </li>
-                                <li>
-                                    <span>+15</span>
-                                    <span>SELECIONAR</span>
-                                </li>
-                                <li>
-                                    <span>+20</span>
-                                    <span>SELECIONAR</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <h4 class="card-title">R$3,50 Comprar</h4>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </section>
-
-    <footer style="clear: both;">
-        rodape
-    </footer>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="itens/js/bootstrap.min.js"></script>
 </body>
 </html>
+  
