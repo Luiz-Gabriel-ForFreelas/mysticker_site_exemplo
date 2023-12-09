@@ -1,0 +1,9 @@
+.rounded_direita {
+    border-radius: 5px 0px 0px 5px;
+    border-right: 1.5px solid rgba(128, 128, 128, 0.3);
+}
+
+.rounded_esquerda {
+    border-radius: 0px 5px 5px 0px;
+    border-left: 1.5px solid rgba(128, 128, 128, 0.3);
+}

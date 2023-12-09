@@ -12,14 +12,14 @@
     <script src="https://kit.fontawesome.com/5cff0a8232.js" crossorigin="anonymous"></script>
 
     <!-- Estilo customizado -->
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
     <title>My Styckers</title>
 </head>
 <body>
-    <header class="">
+    <header class="mt-4">
 
-        <nav class="navbar navbar-expand-sm navbar-light">
+        <nav class="navbar navbar-expand-sm navbar-light d-flex flex-row justify-content-center">
             <div class="container">
 
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
@@ -27,25 +27,26 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="nav-principal">
-                    <div class="container">
+                    
+                    <div class="container w-100">
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-6 col-md-4 border">
                                 <a href="" class="navbar-brand">
-                                    <img src="imagens/atletico.png" alt="" width="70">
-                                    <span>Athetico Paranaense</span>
+                                    <img class="rounded-circle" src="imagens/atletico.png" alt="" height="55" width="55">
+                                    <h6 class="d-inline">Athetico Paranaense</h6    >
                                 </a>
                             </div>
-                            <div class="col-sm-6 aling-self-center">
+                            <div class="col-sm-0 col-md-4 d-sm-none d-md-block border">
                                 <form action="">
-                                    <div class="form-group mt-1">
-                                        <input type="text" class="form-control">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control mt-3 mb-2">
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-sm-3">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item"><a class="btn btn-light nav-link" href="">Perfil</a></li>
-                                    <li class="nav-item"><a class="btn btn-light nav-link" href="">Carteira</a></li>
+                            <div class="col-sm-6 col-md-4 d-flex flex-row justify-content-center border">
+                                <ul class="navbar-nav mt-3 mb-2">
+                                    <li class="nav-item"><a class="btn btn-light nav-link rounded_direita" href="">Perfil</a></li>
+                                    <li class="nav-item"><a class="btn btn-light nav-link rounded_esquerda" href="">Carteira</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -55,6 +56,47 @@
             </div>
         </nav>
     </header>
+    <header> <!-- Inicio cabeçalho -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-warning"> <!-- Cria uma barra de navegação que fica miniazada no tamanho de tela médio -->
+          <div class="container">
+  
+              <a href="#" class="navbar-brand"> <!-- Informa que esta é a logo da navbar -->
+                <img src="img/logo.png" alt="" width="142">
+              </a>
+  
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal"> <!-- Cria o botão para abrir o menu minimizado -->
+                <span class="navbar-toggler-icon"></span> <!-- Define o ícone do botão para abrir o menu minimizado -->
+              </button>
+  
+              <div class="collapse navbar-collapse" id="nav-principal"> <!-- Define a navbar como um item que deve minimizar em pequenas telas -->
+                <ul class="navbar-nav ml-auto">
+  
+                  <li class="nav-item"> <!-- Cria um espaçameto para os itens da nav -->
+                    <a href="" class="nav-link">Home</a> <!-- Informa que este é um link clicavel da nav -->
+                  </li>
+              
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Recursos</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Benefícios</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="" class="nav-link">Preços</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="" class="btn btn-outline-light ml-4">Entrar</a>
+                  </li>
+  
+                </ul>
+              </div>
+  
+          </div>
+        </nav>
+      </header> <!-- Fim cabeçalho -->
 
 </body>
 </html>
