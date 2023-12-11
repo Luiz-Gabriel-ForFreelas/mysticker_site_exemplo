@@ -36,14 +36,32 @@
 }
 
 .number-cont {
-    padding-left: 35%;
+    padding-left: 35%;  
     padding-right: 35%;
+    background-color: rgba(172, 168, 168, 0.8);
+    color: white;
+    border-radius: 15px;
 }
 
 .button-classic {
-    background-color: rgb(179, 178, 178);
+    background-color: rgba(156, 156, 156, 0.2);
+    color: rgb(46, 42, 42);
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 
 .button-classic:hover {
     background-color: gray;
+}
+
+.button-dark {
+    background-color: rgba(100, 100, 100, 0.8);
+}
+
+.button-dark:hover {
+    background-color: rgba(100, 100, 100, 1);
+}
+
+.color-white {
+    color: white;
 }
